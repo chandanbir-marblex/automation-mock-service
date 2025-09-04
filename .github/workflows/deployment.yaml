@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "src/config/mock-config"
+      - "src/config/mock-config/**"
+      - ".github/workflows/deployment.yaml"
     branches-ignore:
       - main
       - dev
